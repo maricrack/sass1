@@ -1,0 +1,22 @@
+.header
+{
+    background-image: linear-gradient(to left, rgb(49, 57, 128) , rgb(231, 50, 186));
+    grid-area: encabezado;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;   
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    .header__titulo
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    .header__logo
+{
+    display: inline-block;
+    border-radius: 5px 30px 45px 60px;
+    margin-top: 20px;
+    }
+}
+}
