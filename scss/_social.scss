@@ -1,0 +1,26 @@
+.social{
+    background-color: wheat;
+    width: 50px;
+    position:absolute;
+    top:auto;
+    right: 20px;
+    ul{
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    li{
+        transition: all 0,5s ease;
+        a{
+            color:blanchedalmond;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }&:hover
+        {
+            transform: scale (1.4);
+        }
+    }
+}

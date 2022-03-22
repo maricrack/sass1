@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import "_header";
+@import "social";
 *
 {
     margin: 0;
@@ -41,3 +42,22 @@
     display: inline-block;
     transform: skewY(5deg);
    }
+   //maps
+   $redes: ( /*Declaramos nuestro mapa*/
+   facebook: blue,
+   instagram:  #3a5795,
+   whatsapp: green
+); 
+.icon-social
+{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+.btn--#{$red} {
+  background-color: $color;
+  @extend .icon-social;
+}
+}
+
